@@ -1,6 +1,6 @@
 import os
 from calculator import Callculator
-import colored
+from Diary import diary_entry
 
 def cleaning():
     os.system("cls")
@@ -9,15 +9,25 @@ print("  /$$$$$$   /$$$$$$        /$$    /$$  /$$$$$$ \n /$$__  $$ /$$__  $$    
 
 print("welcome, What whould you like to open?")
 print("1.Calculater \n2.Diary \n3.webbrowser \n4.exit")
-print(colored('hello', 'red'), colored('world', 'green'))
+
 choose = int(input(">>> "))
 
 #
 #Call programs
 #
-
+# TODO: loop program util choose is == 4
 if(choose == 1):
     cleaning()
     Callculator()
-elif():
+    # TODO: how do I call back?
+elif(choose == 2):
+    # TODO: Create a freaking Diary, How?
     cleaning()
+    diary_entry()
+elif(choose == 3):
+    ## TODO: Had already make this, just copy and paste
+    cleaning()
+elif(choose == 4):
+    SystemExit
+else:
+    print("invalid text")
