@@ -37,6 +37,8 @@ def infinty_util_death():
         elif(choose == 4):
             return False
             SystemExit
+        elif(choose == 5):
+            return False
         else:
             print("invalid text")
             infinty_util_death()
